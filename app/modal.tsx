@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
   },
 
   header: {
-    padding: 20,
+    padding: 70,
     alignItems: "center",
     backgroundColor: "#000"
   },
