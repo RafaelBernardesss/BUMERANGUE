@@ -55,14 +55,7 @@ export default function App() {
 
       {/* CONTEÚDO */}
       <View style={styles.barlogin}>
-        <Text style={styles.txtcadastro}>Cadastre-se</Text>
-
-        <Text style={styles.txtusername}>Nome Completo:</Text>
-        <TextInput
-          style={styles.inputusername}
-          placeholder="Digite seu nome"
-          placeholderTextColor="#777"
-        />
+        <Text style={styles.txtcadastro}>Login</Text>
 
 
 
@@ -73,12 +66,6 @@ export default function App() {
           placeholderTextColor="#777"
         />
 
-        <Text style={styles.txtemail}>Email:</Text>
-        <TextInput
-          style={styles.inputemail}
-          placeholder="exemplo@gmail.com"
-          placeholderTextColor="#777"
-        />
 
         <Text style={styles.txtsenha}>Senha:</Text>
         <TextInput
@@ -89,13 +76,18 @@ export default function App() {
         />
 
         <TouchableOpacity style={styles.botao}>
-          <Text style={styles.txtbutton}>Criar conta</Text>
+          <Text style={styles.txtbutton}>Entrar</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
-          onPress={() => router.push("/login")}
+          onPress={() => router.push("/cadastro")}
         >
-          <Text style={styles.login}>Já tenho uma conta</Text>
+          <Text style={styles.login}>Não tenho uma conta</Text>
+        </TouchableOpacity>
+         <TouchableOpacity
+          onPress={() => router.push("/restaurar")}
+        >
+          <Text style={styles.senha}>Perdi minha senha</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -187,6 +179,12 @@ const styles = StyleSheet.create({
 
   login: {
     color: "white",
+    fontWeight: "bold",
+    marginTop: 15,
+  },
+
+  senha: {
+    color: "#3EC8FF",
     fontWeight: "bold",
     marginTop: 15,
   },
