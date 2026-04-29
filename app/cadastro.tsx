@@ -64,6 +64,15 @@ export default function App() {
           placeholderTextColor="#777"
         />
 
+
+
+        <Text style={styles.txtcpf}>CPF:</Text>
+        <TextInput
+          style={styles.inputcpf}
+          placeholder="CPF"
+          placeholderTextColor="#777"
+        />
+
         <Text style={styles.txtemail}>Email:</Text>
         <TextInput
           style={styles.inputemail}
@@ -156,6 +165,12 @@ const styles = StyleSheet.create({
     alignSelf: "flex-start",
     marginLeft: 80,
   },
+  txtcpf: {
+    color: "white",
+    fontWeight: "bold",
+    alignSelf: "flex-start",
+    marginLeft: 80,
+  },
 
   txtsenha: {
     color: "white",
@@ -187,6 +202,14 @@ const styles = StyleSheet.create({
   },
 
   inputemail: {
+    backgroundColor: "white",
+    height: 45,
+    width: 220,
+    borderRadius: 10,
+    paddingHorizontal: 10,
+    marginBottom: 10,
+  },
+  inputcpf: {
     backgroundColor: "white",
     height: 45,
     width: 220,
