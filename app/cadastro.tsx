@@ -24,7 +24,7 @@ export default function App() {
                 <Text style={styles.txtsenha}>Senha:</Text>
                 <TextInput style={styles.inputsenha} placeholder="******"></TextInput>
                 <TouchableOpacity style={styles.botao}>
-                    <Text style={{ color: "#000" }}>Criar conta</Text>
+                    <Text style={styles.txtbutton}>Criar conta</Text>
                 </TouchableOpacity>
                 <TouchableOpacity>
                     <Text onPress={() => router.push("/login")} style={styles.login}>Já tenho uma conta</Text>
@@ -45,6 +45,11 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     //Textos
+    txtbutton: {
+         color: "#000",
+        fontWeight: "bold",
+    },
+
     txtcadastro: {
         color: "white",
     },
@@ -63,12 +68,15 @@ const styles = StyleSheet.create({
     //inputs
     inputusername:{
         backgroundColor: "white",
+        padding:10,
     },
     inputemail:{
         backgroundColor: "white",
+        padding:10,
     },
     inputsenha:{
         backgroundColor: "white",
+        padding:10,
     },
     //botões
     botao: {
@@ -78,6 +86,6 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         borderRadius: 10,
-        marginTop: 10
+        marginTop: 10,
     }
 });
