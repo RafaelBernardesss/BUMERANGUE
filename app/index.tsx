@@ -5,11 +5,11 @@ import {
   View,
   Text,
   StyleSheet,
-  ScrollView,
   TouchableOpacity,
   Dimensions,
   Pressable
 } from "react-native";
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 
 const screenWidth = Dimensions.get("window").width;
@@ -18,7 +18,7 @@ export default function App() {
   const router = useRouter();
   const [hover, setHover] = useState(false);
   return (
-    <ScrollView style={styles.container}>
+    <SafeAreaView style={styles.container}>
 
       {/* HEADER */}
       <View style={styles.header}>
@@ -78,7 +78,7 @@ export default function App() {
         </TouchableOpacity>
       </View>
 
-    </ScrollView>
+    </SafeAreaView>
   );
 }
 
