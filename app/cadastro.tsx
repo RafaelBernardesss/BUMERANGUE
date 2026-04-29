@@ -15,7 +15,7 @@ export default function App() {
   const [menuAberto, setMenuAberto] = useState(false);
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       {/* BOTÃO HAMBURGUER */}
       <TouchableOpacity
         style={styles.menuBtn}
@@ -89,7 +89,7 @@ export default function App() {
           <Text style={styles.login}>Já tenho uma conta</Text>
         </TouchableOpacity>
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 
