@@ -41,7 +41,7 @@ export default function App() {
               <Text style={styles.buttonText}>Oferecer serviço</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.secondaryButton}>
+            <TouchableOpacity style={styles.secondaryButton} onPress={() => router.push("/ajuda")}>
               <Text style={styles.secondaryText}>Encontrar ajuda</Text>
             </TouchableOpacity>
           </View>
